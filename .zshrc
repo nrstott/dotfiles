@@ -54,8 +54,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/Users/nathanstott/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/nathanstott/Library/Haskell/bin:/Users/nathanstott/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
-[ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh # This loads NVM
-nvm use 0.10
+[ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh && nvm use 0.10 # This loads NVM
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -66,6 +65,9 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
   export EDITOR='vim'
 fi
+
+# Set vi mode for zsh
+bindkey -v
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
