@@ -54,4 +54,6 @@ set expandtab
 
 set backspace=2
 
+" Use /tmp for swap files
+set directory=/tmp
 
