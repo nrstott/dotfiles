@@ -51,7 +51,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/Users/nathanstott/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/nathanstott/Library/Haskell/bin:/Users/nathanstott/.rvm/bin"
+export PATH="$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/nathanstott/Library/Haskell/bin:/Users/nathanstott/.rvm/bin:$HOME/working/spark-1.4.0/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 [ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh && nvm use 0.10 # This loads NVM
@@ -83,3 +83,8 @@ bindkey -v
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export KAFKA_HOME=/usr/local/Cellar/kafka/0.8.2.1
+export SPARK_HOME=$HOME/working/spark-1.4.0
+
+export PATH="/usr/local/sbin:$PATH"
